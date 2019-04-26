@@ -178,6 +178,51 @@
 						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout --no-ff [nombre de la rama que sera absorbida]</code></pre>
 					</section>
 				</section>
+				<section data-background="lib/img/team.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>codigo en equipo</h2>
+					<p>subir cambios</p>
+					<pre><code class="hljs html" style="word-wrap: break-word;">git push origin [nombre de la rama]</code></pre>
+					<p>bajar cambios</p>
+					<pre><code class="hljs html" style="word-wrap: break-word;">git pull</code></pre>
+					<p>actualizar tu rama actual con otra de diferente o del mismo nombre que este arriba</p>
+					<pre><code class="hljs html" style="word-wrap: break-word;">git pull origin [nombre de la rama]</code></pre>					
+				</section>
+				<section data-background="lib/img/bonus.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">					
+				</section>
+				<section data-background="lib/img/ghp.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">					
+					<h2>github pages</h2>
+					<a>github te permite subir y dejar publicos sitos web estaticos</a>
+					<p>debes seguir los siguientes pasos</p>
+					<ul>
+						<li>tener un archivo llamado <a>index.html</a>  (este sera el que se leera principalmente)</li>
+						<li>crear una rama llamada <a>gh-pages</a> (esta rama github la detecta automaticamente para el uso del sitio)</li>
+						<li>la direccion web se tu pagina sera 
+								<pre><code class="hljs html" style="word-wrap: break-word;">[nombre de perfil u organizacion].github.io/[nombre del repo]</code></pre>
+						</li>
+					</ul>					
+				</section>
+				<section data-background="lib/img/cherry.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">					
+					<section>
+						<h2>Cherry pick</h2>
+						<p>se puede usar cuando hicimos uno o varios commits en una rama que no era y necesitamos mover todo a otra rama</p>
+					</section>
+					<section>
+						<p>pasarnos a la rama que deberia tener el commit</p>
+						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout [nombre de la rama]</code></pre>
+						<p>ahora queremos traer a esta rama el commit de la otra rama</p>
+						<p><a>[sha 1] = codigo sha del commit que queremos traer desde la otra rama</a></p>
+						<pre><code class="hljs html" style="word-wrap: break-word;">git cherry-pick [sha 1] </code></pre>
+						<p>ya abremos realizado un duplicado del commit en nuestra rama</p>
+					</section>
+					<section>
+						<p>nos devolvemos la rama con el error del commit</p>
+						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout [nombre de la rama]</code></pre>
+						<p>ahora se realizara un reset de la rama hasta el commit anterior a commit movido</p>
+						<p><a>[sha 2] = codigo del commit anteior al commit movido</a></p>
+						<pre><code class="hljs html" style="word-wrap: break-word;">git reset --hard [sha 2]</code></pre>
+						<p>ya nos podremos devolver a la rama a la que movimos el commit</p>
+					</section>
+				</section>
 			</div>
 		</div>
 
