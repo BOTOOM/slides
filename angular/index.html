@@ -88,9 +88,82 @@
 						<pre><code class="hljs html" style="word-wrap: break-word;">ng generate pipe [directorio]/[nombre del componente]</code></pre>
 					</section>
 				</section>
-				<section>
+				<section data-background="lib/img/ang4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
 					<h2>creacion de componentes</h2>
-					<a href="https://github.com/BOTOOM/slides/blob/angular/angular/lib/pdf/styles.css">estilos</a>
+					<a href="https://github.com/BOTOOM/slides/blob/angular/angular/lib/pdf/styles.css">estilos</a> <br>
+					<a href="https://github.com/BOTOOM/slides/blob/angular/angular/lib/pdf/experiencia.ts">service</a>
+				</section>
+				<section data-background="lib/img/ang2.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>imports necesarios</h2>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+import {RouterModule} from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgModule  } from '@angular/core';
+// rutas
+import {APP_ROUTING} from './app.routes';
+
+imports: [
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule ,
+    RouterModule.forRoot(APP_ROUTING, {useHash: true})
+  ],
+
+												</code></pre>
+				</section>
+				<section data-background="lib/img/ang3.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<section>
+						<h2>creacion de rutas</h2>
+						<p></p>
+					</section>
+					<section data-background="lib/img/ann4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<p>app.router.ts</p>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+							import { Routes } from '@angular/router';
+							import { HomeComponent } from './components/home/home.component';
+							import { ResposableComponent } from './components/resposable/resposable.component';
+
+							const APP_ROUTES: Routes = [
+							  { path: 'home', component: HomeComponent },
+							  { path: 'responsable', component: ResposableComponent },
+							//   { path: 'artist/:id', component: ArtistaComponent },
+							  { path: '', pathMatch: 'full', redirectTo: 'home' },
+							  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+							];
+							
+							export const APP_ROUTING = (APP_ROUTES);
+					</code></pre>
+					</section>
+					<section data-background="lib/img/ang.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+								<router-outlet></router-outlet>
+					</code></pre>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+							 routerLinkActive="active"
+								<a class="nav-link" routerLink="responsable">Responsable</a>
+				</code></pre>
+					</section>
+				</section>
+				<section data-background="lib/img/ang2.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>directivas</h2>
+					<p>Ng-If</p>
+					<p>Ng-For</p>
+				</section>
+				<section data-background="lib/img/ang3.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>NgModules</h2>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+							[(ngModel)]="nombres"
+				</code></pre>
+				</section>
+				<section data-background="lib/img/ang4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>service</h2>
+				</section>
+				<section data-background="lib/img/ang.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>publicacion</h2>
+					<pre><code class="hljs html" style="word-wrap: break-word;">npm i angular-cli-ghpages --save-dev</code></pre>
+					<pre><code class="hljs html" style="word-wrap: break-word;">ng build --prod --base-href "https://[usuario github].github.io/[nombre del repo]/"</code></pre>
+					<pre><code class="hljs html" style="word-wrap: break-word;">npx angular-cli-ghpages --dir=dist/[nombre del proyecto]</code></pre>
 				</section>
 			</div>
 		</div>
