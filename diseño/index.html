@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>ANGULAR</title>
+		<title>Indroduccion UI / UX</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -29,8 +29,8 @@
 			<div class="slides">
 				<!-- portada -->
 				<section>
-					<section data-background="lib/img/intro-ang.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-						<h2>Angular</h2>
+					<section data-background="lib/img/intro.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<h2>Indroduccion UI / UX</h2>
 					</section>
 					<section data-background="lib/img/dev.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
 						<h4>Edwar Diaz Ruiz</h4>
@@ -45,126 +45,66 @@
 				</section>
 				<!-- fin portada -->
 				<section>
-					<section data-background="lib/img/R-V-A.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.8">
+					<section data-background="lib/img/dis1.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<h2>Que Es??? ...</h2>
 					</section>
-					<section data-background="lib/img/pok.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.8">
+					<section data-background="lib/img/dis1.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<h1>UI</h1>
+						<p>USER INTERFACE</p>
+						<P>INTERFAZ DE USUARIO</P>
 					</section>
-				</section>
-				<section data-background="lib/img/need.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<section>
-						<h2>que necesitamos pasa trabajar con angular?</h2>
+					<section data-background="lib/img/cre2.png" data-background-repeat="no-repeat" data-background-size="90%" data-background-opacity="0.95">
 					</section>
-					<section>
-						<h3>instalaciones necesarias</h3>
-						<a href="lib/pdf/Instalaciones-necesarias.pdf"><i class="far fa-file-pdf"></i> extenciones en editores (por comididad)</a> <br>
-						<a href="https://git-scm.com/downloads"><i class="fab fa-git-square"></i> Git</a> <br>
-						<a href="https://nodejs.org/es/"><i class="fab fa-node"></i> Node js</a> <br>
-						<a href="https://cli.angular.io/"><i class="fab fa-angular"></i> Angular cli</a> <br>
+					<section data-background="lib/img/cre3.png" data-background-repeat="no-repeat" data-background-size="90%" data-background-opacity="0.95">
 					</section>
-					<section>
-						<h3>si quieres añadir mas</h3>
-						<a href="https://fontawesome.com/"><i class="fab fa-font-awesome"></i> Font Awesome</a> <br>
-						<a href="https://getbootstrap.com/"><i class="fab fa-bootstrap"></i> Bootstrap </a> <br>
-						<a href="https://akveo.github.io/nebular/">Nebular</a> <br>
-						<a href="https://material.angular.io/">Angular Material</a> <br>
-						<a href="https://www.npmjs.com/"><i class="fab fa-npm"></i> npm</a>
+					<section data-background="lib/img/dis1.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<h1>UX</h1>
+							<p>USER EXPERIENCE</p>
+							<P>EXPERIENCIA DE USUARIO</P>
 					</section>
-				</section>
-				<section data-background="lib/img/ang.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<section>
-							<h2>crear un proyecto</h2>
-							<pre><code class="hljs html" style="word-wrap: break-word;">ng new [nombre del proyecto]</code></pre>
-							<p>correr el servidor del proyecto</p>
-							<pre><code class="hljs html" style="word-wrap: break-word;">ng serve</code></pre>
-							<pre><code class="hljs html" style="word-wrap: break-word;">npm start</code></pre>
+					<section data-background="lib/img/cre1.png" data-background-repeat="no-repeat" data-background-size="90%" data-background-opacity="0.95">
 					</section>
-					<section>
-						<h2>crear nuevos elementos</h2>
-						<p>componentes</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">ng generate component [directorio]/[nombre del componente]</code></pre>
-						<p>servicios</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">ng generate service [directorio]/[nombre del componente]</code></pre>
-						<p>pipes</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">ng generate pipe [directorio]/[nombre del componente]</code></pre>
+					<section data-background="lib/img/dis1.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<h2>desing thinking</h2>
+						<h2>proceso iterativo</h2>
 					</section>
-				</section>
-				<section data-background="lib/img/ang4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<h2>creacion de componentes</h2>
-					<a href="https://github.com/BOTOOM/slides/blob/angular/angular/lib/pdf/styles.css">estilos</a> <br>
-					<a href="https://github.com/BOTOOM/slides/blob/angular/angular/lib/pdf/experiencia.ts">service</a>
-				</section>
-				<section data-background="lib/img/ang2.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<h2>imports necesarios</h2>
-					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-import {RouterModule} from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgModule  } from '@angular/core';
-// rutas
-import {APP_ROUTING} from './app.routes';
-
-imports: [
-    BrowserModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule ,
-    RouterModule.forRoot(APP_ROUTING, {useHash: true})
-  ],
-
-												</code></pre>
-				</section>
-				<section data-background="lib/img/ang3.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<section>
-						<h2>creacion de rutas</h2>
-						<p></p>
+					<section data-background="lib/img/cre4.png" data-background-repeat="no-repeat" data-background-size="90%" data-background-opacity="0.95">
 					</section>
-					<section data-background="lib/img/ann4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<p>app.router.ts</p>
-					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-							import { Routes } from '@angular/router';
-							import { HomeComponent } from './components/home/home.component';
-							import { ResposableComponent } from './components/resposable/resposable.component';
-
-							const APP_ROUTES: Routes = [
-							  { path: 'home', component: HomeComponent },
-							  { path: 'responsable', component: ResposableComponent },
-							//   { path: 'artist/:id', component: ArtistaComponent },
-							  { path: '', pathMatch: 'full', redirectTo: 'home' },
-							  { path: '**', pathMatch: 'full', redirectTo: 'home' }
-							];
-							
-							export const APP_ROUTING = (APP_ROUTES);
-					</code></pre>
+					<section data-background="lib/img/cre5.png" data-background-repeat="no-repeat" data-background-size="90%" data-background-opacity="0.95">
 					</section>
-					<section data-background="lib/img/ang.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-						<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-								<router-outlet></router-outlet>
-					</code></pre>
-					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-							 routerLinkActive="active"
-								<a class="nav-link" routerLink="responsable">Responsable</a>
-				</code></pre>
-					</section>
-				</section>
-				<section data-background="lib/img/ang2.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<h2>directivas</h2>
-					<p>Ng-If</p>
-					<p>Ng-For</p>
-				</section>
-				<section data-background="lib/img/ang3.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<h2>NgModules</h2>
-					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-							[(ngModel)]="nombres"
-				</code></pre>
-				</section>
-				<section data-background="lib/img/ang4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<h2>service</h2>
-				</section>
-				<section data-background="lib/img/ang.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<h2>publicacion</h2>
-					<pre><code class="hljs html" style="word-wrap: break-word;">npm i angular-cli-ghpages --save-dev</code></pre>
-					<pre><code class="hljs html" style="word-wrap: break-word;">ng build --prod --base-href "https://[usuario github].github.io/[nombre del repo]/"</code></pre>
-					<pre><code class="hljs html" style="word-wrap: break-word;">npx angular-cli-ghpages --dir=dist/[nombre del proyecto]</code></pre>
-				</section>
+</section>
+<section>
+	<section data-background="lib/img/des3.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+		<h2>consejos y herramientas</h2>
+	</section>
+	<section data-background="lib/img/des3.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+		<h2>mockup y sitios externos</h2>
+		<a href="https://www.stinkstudios.com/">stinkstudios</a>
+		<a href="http://foodsense.is/">foodsense</a>
+		<a href="https://upc.acm.org/">ACM Barcelona</a>
+	</section>
+	<section data-background="lib/img/des3.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+		<p>wireframe a papel y digital</p>
+		<a href="lib/pdf/document.pdf"><i class="far fa-file-pdf"></i> documento 1</a> <br>
+		<a href="lib/pdf/UI-Stencils-RESPONSIVE-letter.pdf"><i class="far fa-file-pdf"></i> documento 2</a> <br>
+		<a href="https://www.draw.io/">draw.io</a>
+	</section>
+	<section data-background="lib/img/movile.png" data-background-repeat="no-repeat" data-background-size="70%" data-background-opacity="0.95">
+	</section>
+	<section data-background="lib/img/web.png" data-background-repeat="no-repeat" data-background-size="70%" data-background-opacity="0.95">
+	</section>
+</section>
+<section data-background="lib/img/dis3.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+	<section>
+		<h2>consejos y herramientas</h2>
+	</section>
+	<section>
+		<h2>Buscar que ya existe en el mercado</h2>
+	</section>
+	<section>
+		<h2>hostoria de usuario</h2>
+	</section>
+</section>
 			</div>
 		</div>
 
