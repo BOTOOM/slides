@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>ANGULAR</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+		<!-- fontasome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- portada -->
+				<section>
+					<section data-background="lib/img/intro-ang.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<h2>Angular</h2>
+					</section>
+					<section data-background="lib/img/dev.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<h4>Edwar Diaz Ruiz</h4>
+						<p>Estudiante de ultimos semestres de ingenieria de sistemas</p>
+						<p>Desarrolador WEB full stack</p>
+						<a href="https://github.com/BOTOOM"><i class="fab fa-github"></i> BOTOOM</a> <br>
+						<a href="https://gitlab.com/SrBotom"><i class="fab fa-gitlab"></i> SrBotom</a> <br>
+						<a href="https://www.instagram.com/sr.botom"><i class="fab fa-instagram"></i>  @sr.botom</a> <br>
+						<a href="https://www.facebook.com/SR.BOTOM"><i class="fab fa-facebook-square"></i> SR.BOTOM</a> <br>
+						<a href="eddiazr@correo.udistrital.edu.co"><i class="far fa-envelope"></i> eddiazr@correo.udistrital.edu.co</a> <br>
+					</section>
+				</section>
+				<!-- fin portada -->
+				<section>
+					<section data-background="lib/img/R-V-A.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.8">
+					</section>
+					<section data-background="lib/img/pok.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.8">
+					</section>
+				</section>
+				<section data-background="lib/img/need.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<section>
+						<h2>que necesitamos pasa trabajar con angular?</h2>
+					</section>
+					<section>
+						<h3>instalaciones necesarias</h3>
+						<a href="lib/pdf/Instalaciones-necesarias.pdf"><i class="far fa-file-pdf"></i> extenciones en editores (por comididad)</a> <br>
+						<a href="https://git-scm.com/downloads"><i class="fab fa-git-square"></i> Git</a> <br>
+						<a href="https://nodejs.org/es/"><i class="fab fa-node"></i> Node js</a> <br>
+						<a href="https://cli.angular.io/"><i class="fab fa-angular"></i> Angular cli</a> <br>
+					</section>
+					<section>
+						<h3>si quieres añadir mas</h3>
+						<a href="https://fontawesome.com/"><i class="fab fa-font-awesome"></i> Font Awesome</a> <br>
+						<a href="https://getbootstrap.com/"><i class="fab fa-bootstrap"></i> Bootstrap </a> <br>
+						<a href="https://akveo.github.io/nebular/">Nebular</a> <br>
+						<a href="https://material.angular.io/">Angular Material</a> <br>
+						<a href="https://www.npmjs.com/"><i class="fab fa-npm"></i> npm</a>
+					</section>
+				</section>
+				<section data-background="lib/img/ang.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<section>
+							<h2>crear un proyecto</h2>
+							<pre><code class="hljs html" style="word-wrap: break-word;">ng new [nombre del proyecto]</code></pre>
+							<p>correr el servidor del proyecto</p>
+							<pre><code class="hljs html" style="word-wrap: break-word;">ng serve</code></pre>
+							<pre><code class="hljs html" style="word-wrap: break-word;">npm start</code></pre>
+					</section>
+					<section>
+						<h2>crear nuevos elementos</h2>
+						<p>componentes</p>
+						<pre><code class="hljs html" style="word-wrap: break-word;">ng generate component [directorio]/[nombre del componente]</code></pre>
+						<p>servicios</p>
+						<pre><code class="hljs html" style="word-wrap: break-word;">ng generate service [directorio]/[nombre del componente]</code></pre>
+						<p>pipes</p>
+						<pre><code class="hljs html" style="word-wrap: break-word;">ng generate pipe [directorio]/[nombre del componente]</code></pre>
+					</section>
+				</section>
+				<section data-background="lib/img/ang4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>creacion de componentes</h2>
+					<a href="https://github.com/BOTOOM/slides/blob/angular/angular/lib/pdf/styles.css">estilos</a> <br>
+					<a href="https://github.com/BOTOOM/slides/blob/angular/angular/lib/pdf/experiencia.ts">service</a>
+				</section>
+				<section data-background="lib/img/ang2.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>imports necesarios</h2>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+import {RouterModule} from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgModule  } from '@angular/core';
+// rutas
+import {APP_ROUTING} from './app.routes';
+
+imports: [
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule ,
+    RouterModule.forRoot(APP_ROUTING, {useHash: true})
+  ],
+
+												</code></pre>
+				</section>
+				<section data-background="lib/img/ang3.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<section>
+						<h2>creacion de rutas</h2>
+						<p></p>
+					</section>
+					<section data-background="lib/img/ann4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<p>app.router.ts</p>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+							import { Routes } from '@angular/router';
+							import { HomeComponent } from './components/home/home.component';
+							import { ResposableComponent } from './components/resposable/resposable.component';
+
+							const APP_ROUTES: Routes = [
+							  { path: 'home', component: HomeComponent },
+							  { path: 'responsable', component: ResposableComponent },
+							//   { path: 'artist/:id', component: ArtistaComponent },
+							  { path: '', pathMatch: 'full', redirectTo: 'home' },
+							  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+							];
+							
+							export const APP_ROUTING = (APP_ROUTES);
+					</code></pre>
+					</section>
+					<section data-background="lib/img/ang.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+						<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+								<router-outlet></router-outlet>
+					</code></pre>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+							 routerLinkActive="active"
+								<a class="nav-link" routerLink="responsable">Responsable</a>
+				</code></pre>
+					</section>
+				</section>
+				<section data-background="lib/img/ang2.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>directivas</h2>
+					<p>Ng-If</p>
+					<p>Ng-For</p>
+				</section>
+				<section data-background="lib/img/ang3.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>NgModules</h2>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+							[(ngModel)]="nombres"
+				</code></pre>
+				</section>
+				<section data-background="lib/img/ang4.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>service</h2>
+				</section>
+				<section data-background="lib/img/ang.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
+					<h2>publicacion</h2>
+					<pre><code class="hljs html" style="word-wrap: break-word;">npm i angular-cli-ghpages --save-dev</code></pre>
+					<pre><code class="hljs html" style="word-wrap: break-word;">ng build --prod --base-href "https://[usuario github].github.io/[nombre del repo]/"</code></pre>
+					<pre><code class="hljs html" style="word-wrap: break-word;">npx angular-cli-ghpages --dir=dist/[nombre del proyecto]</code></pre>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
