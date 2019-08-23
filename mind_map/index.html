@@ -35,12 +35,18 @@
 					<section data-background="lib/img/intro-mapas.jpg" data-background-repeat="no-repeat" data-background-size="35%" data-background-opacity="0.7">
 						<!-- <h2>mapas mentales</h2> -->
 					</section>
-					<section>
+					<section data-background="lib/img/agenda.jpg" data-background-repeat="no-repeat" data-background-size="80%" data-background-opacity="0.5">
 						<h3>agenda</h3>
 						<ul>
-							<li></li>
-							<li></li>
+							<li>El cerebro</li>
+							<li>Elementos de los mapas mentales</li>
+							<li>Como hacer mapas mentales</li>
+							<li>Ventajas de los mapas mentales</li>
+							<li>inteligencias del cerebro</li>
 						</ul>
+					</section>
+					<section data-background="lib/img/intro-mapas2.jpg" data-background-repeat="no-repeat" data-background-size="90%" data-background-opacity="0.7">
+						<h3>"el aprendizaje con todo el cerebro es una realidad"</h3>
 					</section>
 					<!-- <section data-background="lib/img/dev.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
 						<h4>Edwar Diaz Ruiz</h4>
@@ -54,6 +60,14 @@
 					</section> -->
 				</section>
 				<!-- fin portada -->
+
+				<!-- cerebro -->
+				<section>
+					<section data-background="lib/img/part_cerebro.jpg" data-background-repeat="no-repeat" data-background-size="80%" data-background-opacity="0.5">
+						<h3>"es imprescindible dar un breve vistazo al funcionamiento y división del cerebro, para comprender la necesidad de incorporar los mapas mentales como herramienta integradora para el desarrollo de la compleja red de inteligencias que definen la mente humana".</h3>
+					</section>
+				</section>
+
 				<!-- diferencias -->
 				<section data-background="lib/img/intro-git.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
 					<section>
@@ -76,168 +90,8 @@
 				</section>
 				<!-- fin diferencias -->
 				<!-- primeros pasos -->
-				<section data-background="lib/img/skill.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<section>
-						<h2>Primeros Pasos</h2>
-					</section>
-					<section>
-						<h2>Instalacion</h2>
-						<img src="lib/img/inst.png" alt="" width="30%"> <br>
-					</section>
-					<section data-background="" data-background-repeat="no-repeat" data-background-size="100px">
-						<h2>Configuracion basica</h2>
-						<h3>Usuario</h3>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git config --global user.name [nombre]</code></pre>
-						<h3>Correo</h3>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git config --global user.email [email de la cuenta]</code></pre>
-						<h3>Listar cambios</h3>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git config --global --list</code></pre>
-					</section>
-					<section data-background="" data-background-repeat="no-repeat" data-background-size="100px">
-						<h2>Configuracion proxy</h2>
-						<h3>Agregar:</h3>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git config --global http.proxy http://direccion_ip_proxy:puerto</code></pre>
-						<h3>Eliminar:</h3>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git config --global --unset http.proxy</code></pre>
-					</section>
-				</section>
-				<section data-background="lib/img/init.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<section>
-						<h2>Inicio de un proyecto</h2>
-						<p>En local</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git init</code></pre>
-						<p>Crear repositorio remoto</p>
-					</section>
-					<section>
-						<h2>Conexion con repositosio remoto</h2>
-						<p>Conexion entre repositorio remoto y local</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git remote add origin [https del repo]</code></pre>
-						<p>Verificar conexion</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git remote -v</code></pre>
-						<p>Desconectar repositorio</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git remote remove origin</code></pre>
-					</section>
-				</section>
-				<section>
-					<section data-background="lib/img/ver.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-						<h2>Versiones</h2>
-					</section>
-					<section data-background="lib/img/ver.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-						<p>Ver cambios en el proyecto:</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git status</code></pre>
-						<p>Añadir cambios</p>
-						<p>Solo un archivo:</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git add [nombre del archivo]</code></pre>
-						<p>Todos lo cambios</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git add -A</code></pre>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git add .</code></pre>
-					</section>
-					<section data-background="lib/img/commit.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-						<p>Guardar cambios</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git commit -m "[mensaje corto de consiso sobre los cambios]"</code></pre>
-						<p>listado de commits</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git log</code></pre>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git log > commits.txt</code></pre>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git log --oneline --all --graph</code></pre>
-					</section>
-					<section data-background="lib/img/check.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-						<h2>viaje entre versiones</h2>
-						<p>Ir a cualquier version</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout [codigo sha]</code></pre>
-						<p>Ir a la ultima version:</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout [nombre de la rama]</code></pre>
-					</section>
-					<section data-background="lib/img/reset.gif" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-						<h2>reset</h2>
-						<p>solo eliminar el commit(no afecta el código):</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git reset --soft [codigo sha]</code></pre>
-						<p>borra el commit y el código:</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git reset --hard [codigo sha]</code></pre>
-					</section>
-					<section data-background="lib/img/up.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-						<h2>subir cambios</h2>
-						<p>Subir cambios al repositorio:</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git push origin [nombre de la rama]</code></pre>
-					</section>
-				</section>
-				<section data-background="lib/img/branch.png" data-background-repeat="no-repeat" data-background-size="70%" data-background-opacity="0.5">
-					<section>
-						<h2>Ramas o Branch</h2>
-					</section>
-					<section>
-						<p>listar ramas</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git branch</code></pre>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git branch -a</code></pre>
-						<p>crear una rama</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git branch [nombre de la rama]</code></pre>
-						<p>eliminar una rama</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git branch -D [nombre de la rama]</code></pre>
-					</section>
-					<section>
-						<h2>moverse entre ramas</h2>
-						<p>Pasar de una rama a otra</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout [nombre de la rama]</code></pre>
-						<p>crear una nueva rama y moverse a ella al tiempo</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout -b [nombre de la rama]</code></pre>
-					</section>
-					<section>
-						<h2>fusiones</h2>
-						<a>primeramente se debe mover a la rama que recibira los cambios</a>
-						<p>merge con fast-forward</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git merge [nombre de la rama que sera absorbida]</code></pre>
-						<p>merge sin fast-forward (recomendado para el historal)</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git merge --no-ff [nombre de la rama que sera absorbida]</code></pre>
-					</section>
-				</section>
-				<section data-background="lib/img/team.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">
-					<h2>codigo en equipo</h2>
-					<p>subir cambios</p>
-					<pre><code class="hljs html" style="word-wrap: break-word;">git push origin [nombre de la rama]</code></pre>
-					<p>bajar cambios</p>
-					<pre><code class="hljs html" style="word-wrap: break-word;">git pull</code></pre>
-					<p>actualizar tu rama actual con otra de diferente o del mismo nombre que este arriba</p>
-					<pre><code class="hljs html" style="word-wrap: break-word;">git pull origin [nombre de la rama]</code></pre>					
-				</section>
-				<section data-background="lib/img/bonus.jpg" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">					
-				</section>
-				<section data-background="lib/img/ghp.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">					
-					<h2>github pages</h2>
-					<a>github te permite subir y dejar publicos sitos web estaticos</a>
-					<p>debes seguir los siguientes pasos</p>
-					<ul>
-						<li>tener un archivo llamado <a>index.html</a>  (este sera el que se leera principalmente)</li>
-						<li>crear una rama llamada <a>gh-pages</a> (esta rama github la detecta automaticamente para el uso del sitio)</li>
-						<li>la direccion web se tu pagina sera 
-								<pre><code class="hljs html" style="word-wrap: break-word;">[nombre de perfil u organizacion].github.io/[nombre del repo]</code></pre>
-						</li>
-					</ul>					
-				</section>
-				<section data-background="lib/img/cherry.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">					
-					<section>
-						<h2>Cherry pick</h2>
-						<p>se puede usar cuando hicimos uno o varios commits en una rama que no era y necesitamos mover todo a otra rama</p>
-					</section>
-					<section>
-						<p>pasarnos a la rama que deberia tener el commit</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout [nombre de la rama]</code></pre>
-						<p>ahora queremos traer a esta rama el commit de la otra rama</p>
-						<p><a>[sha 1] = codigo sha del commit que queremos traer desde la otra rama</a></p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git cherry-pick [sha 1] </code></pre>
-						<p>ya abremos realizado un duplicado del commit en nuestra rama</p>
-					</section>
-					<section>
-						<p>nos devolvemos la rama con el error del commit</p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git checkout [nombre de la rama]</code></pre>
-						<p>ahora se realizara un reset de la rama hasta el commit anterior a commit movido</p>
-						<p><a>[sha 2] = codigo del commit anteior al commit movido</a></p>
-						<pre><code class="hljs html" style="word-wrap: break-word;">git reset --hard [sha 2]</code></pre>
-						<p>ya nos podremos devolver a la rama a la que movimos el commit</p>
-					</section>
-				</section>
-				<section data-background="lib/img/git-2.png" data-background-repeat="no-repeat" data-background-size="100%" data-background-opacity="0.5">					
-					<h2>issue,milestones,labels,</h2>
-					<h2>projects</h2>
-				</section>
+				
+				
 			</div>
 		</div>
 
