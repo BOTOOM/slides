@@ -214,30 +214,54 @@
 			<pre><code class="hljs html" style="word-wrap: break-word;">docker attach [contenedor]</code></pre>
           </section>
         </section>
-        <section>
+        <section
+          data-background="lib/img/redes.jpg"
+          data-background-repeat="no-repeat"
+          data-background-size="100%"
+          data-background-opacity="0.7"
+        >
           <section>
-            redes en docker
+            <h3>redes en docker</h3>
           </section>
           <section>
             es mejor con docker compose
           </section>
         </section>
-        <section>
+        <section
+          data-background="lib/img/SWARM.png"
+          data-background-repeat="no-repeat"
+          data-background-size="80%"
+          data-background-opacity="0.7"
+        >
           <section>
-            volumenes
+            <h3>Volumenes</h3>
           </section>
           <section>
-            cfeacion basica
+			<p>creacion basica</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker volume create [nombre]</code></pre>
           </section>
           <section>
-            compartir volumenes
+			<p>compartir volumenes entre contenedores</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">--volumes-from [nombre de contenedor]</code></pre>
+			<p>usar un volumen</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">-v [nombre del volumen]:[directorio contenedor]</code></pre>
+			
           </section>
           <section>
-            mapear volumenes
+            <p>
+				mapear volumenes
+			</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">-v [directorio local]:[directorio contenedor]</code></pre>
           </section>
         </section>
-        <section>
-          puertos
+        <section
+          data-background="lib/img/docker3.png"
+          data-background-repeat="no-repeat"
+          data-background-size="100%"
+          data-background-opacity="0.7"
+        >
+		  <p>mapear puertos</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">-v [puerto local]:[puerto contenedor]</code></pre>
         </section>
       </div>
     </div>
