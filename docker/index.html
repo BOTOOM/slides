@@ -168,30 +168,50 @@
 			  <a href="https://hub.docker.com/">link dockerhub</a>
           </section>
         </section>
-        <section>
+        <section
+          data-background="lib/img/comandos.png"
+          data-background-repeat="no-repeat"
+          data-background-size="100%"
+          data-background-opacity="0.7"
+        >
           <section>
             <h2>comandos basicos</h2>
           </section>
           <section>
-            help -- docker
+			<p>comandos</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker</code></pre>
+		  </section>
+		  <section>
+			<p>listar imagenes</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker images</code></pre>
+			<p>bajar imagenes</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker pull [imagen]</code></pre>
+			<p>eliminar imagenes</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker rmi [imagen]</code></pre>
+		</section>
+          <section>
+			  <p>ejecutar contenedores</p>
+			  <pre><code class="hljs html" style="word-wrap: break-word;">docker run --name [nombre contenedor] [imagen]</code></pre>
+			  <p>contenedor iteractivo</p>
+			  <pre><code class="hljs html" style="word-wrap: break-word;">docker run -i -t --name [nombre contenedor] [imagen]</code></pre>
+			  <p>contenedor en segundo plano</p>
+			  <pre><code class="hljs html" style="word-wrap: break-word;">docker run -i -t -d --name [nombre contenedor] [imagen]</code></pre>
           </section>
           <section>
-            ejecutar contenedores docker run, -it -t -d
+			  <p>visualizar contenedores</p>
+				<pre><code class="hljs html" style="word-wrap: break-word;">docker ps</code></pre>
+				<p>visualizar todos los contenedores</p>
+				<pre><code class="hljs html" style="word-wrap: break-word;">docker ps -a</code></pre>
           </section>
           <section>
-            visualizar contenedores .. docker ps ---docker ps -a
-          </section>
-          <section>
-            detener contenedores
-          </section>
-          <section>
-            iniciar contenedores
-          </section>
-          <section>
-            attach contenedores
-          </section>
-          <section>
-            listar imagenes
+			<p>detener contenedores</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker stop [contenedor]</code></pre>
+			<p>iniciar contenedores</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker start [contenedor]</code></pre>
+			<p>eliminar contenedores</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker rm [contenedor]</code></pre>
+			<p>acceder a un contenedor en ejecucion</p>
+			<pre><code class="hljs html" style="word-wrap: break-word;">docker attach [contenedor]</code></pre>
           </section>
         </section>
         <section>
