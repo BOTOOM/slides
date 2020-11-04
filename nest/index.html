@@ -34,8 +34,8 @@
     <div class="slides">
       <!-- portada -->
       <section>
-        <section data-background="lib/img/nest1.png" data-background-repeat="no-repeat"
-          data-background-size="100%" data-background-opacity="0.5">
+        <section data-background="lib/img/nest1.png" data-background-repeat="no-repeat" data-background-size="100%"
+          data-background-opacity="0.5">
           <h2>NEST JS</h2>
         </section>
         <section data-background="lib/img/dev.jpg" data-background-repeat="no-repeat" data-background-size="100%"
@@ -58,38 +58,41 @@
       </section>
       <!-- fin portada -->
       <section data-background="lib/img/nest2.png" data-background-repeat="no-repeat" data-background-size="100%"
-      data-background-opacity="0.5">
-        <section >
+        data-background-opacity="0.5">
+        <section>
           <h2>Que Es??? ...</h2>
         </section>
-        <section >
+        <section>
           <h3>Instalacion</h3>
           <a href="https://docs.nestjs.com/" target="_blank">Documentacion de Nest JS</a>
         </section>
       </section>
       <section>
         <section data-background="lib/img/api2.jpg" data-background-repeat="no-repeat" data-background-size="90%"
-        data-background-opacity="0.7">
+          data-background-opacity="0.7">
           <h2>
             QUE ES UN API
           </h2>
         </section>
         <section data-background="lib/img/api2.jpg" data-background-repeat="no-repeat" data-background-size="90%"
-        data-background-opacity="0.7">
-         <p>
-          El término API es una abreviatura de Application Programming Interfaces, que en español significa interfaz de programación de aplicaciones. Se trata de un conjunto de definiciones y protocolos que se utiliza para desarrollar e integrar el software de las aplicaciones, permitiendo la comunicación entre dos aplicaciones de software a través de un conjunto de reglas.
-         </p>
+          data-background-opacity="0.7">
+          <p>
+            El término API es una abreviatura de Application Programming Interfaces, que en español significa interfaz
+            de programación de aplicaciones. Se trata de un conjunto de definiciones y protocolos que se utiliza para
+            desarrollar e integrar el software de las aplicaciones, permitiendo la comunicación entre dos aplicaciones
+            de software a través de un conjunto de reglas.
+          </p>
         </section>
         <section data-background="lib/img/api_archi.jpg" data-background-repeat="no-repeat" data-background-size="80%"
-        data-background-opacity="0.8">
+          data-background-opacity="0.8">
         </section>
         <section data-background="lib/img/endpoint.png" data-background-repeat="no-repeat" data-background-size="70%"
-        data-background-opacity="0.7">
-        <h2>ENDPOINT</h2>
+          data-background-opacity="0.7">
+          <h2>ENDPOINT</h2>
         </section>
 
         <section data-background="lib/img/tipos_http.jpg" data-background-repeat="no-repeat" data-background-size="70%"
-        data-background-opacity="0.8">
+          data-background-opacity="0.8">
 
         </section>
 
@@ -115,9 +118,83 @@
         </section>
       </section>
       <section data-background="lib/img/postman.jpg" data-background-repeat="no-repeat" data-background-size="100%"
-      data-background-opacity="0.7">
-      <h2>PROBAR ENDPOINTS</h2>
+        data-background-opacity="0.7">
+        <h2>PROBAR ENDPOINTS</h2>
       </section>
+      <section data-background="lib/img/nest4.png" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.7">
+        <section>
+          <h2>Consumo de servicios de terceros</h2>
+        </section>
+        <section>
+          <h3>Pasos en el Api</h3>
+          <ul>
+            <li>Creación del modulo</li>
+            <li>Creación de controlador</li>
+            <li>Creación de servicio</li>
+            <li>Creación de Endpoint</li>
+            <li>Creación de logica para consumo de servicio</li>
+            <li>Dar Respuesta</li>
+          </ul>
+        </section>
+        <section>
+          <h2> async / await </h2>
+        </section>
+        <section>
+          <h2> manejo de errores </h2>
+        </section>
+        <section>
+          <h2> Responder errores </h2>
+        </section>
+        <section>
+          <h2>Nota de buenas practicas</h2>
+          <p>Cada función se encarga de una sola cosa</p>
+        </section>
+        <section>
+          Funciones de los array
+          <a href="https://es.scribd.com/document/409054446/Civilised-Guide-to-Javascript-Array-Methods"> Imagen de referencia </a>
+        </section>
+        <section>
+          <img src="lib/img/array.png" alt="methos array" width="50%">
+        </section>
+        <section>
+          <h2>Recibir datos usando: query , param, body</h2>
+        </section>
+      </section>
+      <!-- <section data-background="lib/img/Swagger.jpg" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.7">
+        <section>
+        </section>
+        <section>
+          <h3>Instalación</h3>
+          <ul>
+            <li>Creación del modulo</li>
+            <li>Creación de controlador</li>
+            <li>Creación de servicio</li>
+            <li>Creación de Endpoint</li>
+            <li>Creación de logica para consumo de servicio</li>
+            <li>Dar Respuesta</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Dockerfile</h2>
+          <pre><code class="hljs" data-trim data-line-numbers="">
+            FROM node:14
+            RUN mkdir -p /usr/src/app
+            WORKDIR /usr/src/app
+            COPY . .
+            ENV API_EXTERNA=https://pokeapi.co/api/v2/
+            ARG URL_BD
+            ENV BD_URL=${URL_BD}
+            RUN npm i -g @nestjs/cli
+            RUN npm install
+            CMD [ "npm", "run", "start" ]
+            EXPOSE 3000
+                        </code></pre>
+        </section>
+        
+
+      </section> -->
     </div>
   </div>
 
