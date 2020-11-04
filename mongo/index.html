@@ -34,8 +34,8 @@
     <div class="slides">
       <!-- portada -->
       <section>
-        <section data-background="lib/img/mongodb.png" data-background-repeat="no-repeat"
-          data-background-size="100%" data-background-opacity="0.5">
+        <section data-background="lib/img/mongodb.png" data-background-repeat="no-repeat" data-background-size="100%"
+          data-background-opacity="0.5">
           <h2>MONGODB</h2>
         </section>
         <section data-background="../images/dev.jpg" data-background-repeat="no-repeat" data-background-size="100%"
@@ -66,188 +66,120 @@
           data-background-opacity="0.8"></section>
         <section data-background="lib/img/sqlNoSql.jpg" data-background-repeat="no-repeat" data-background-size="100%"
           data-background-opacity="0.8"></section>
-        
+
         <section data-background="lib/img/mongoE3.png" data-background-repeat="no-repeat" data-background-size="50%"
           data-background-opacity="0.9"></section>
       </section>
-      <section data-background="lib/img/docker2.png" data-background-repeat="no-repeat" data-background-size="100%"
+      <section data-background="lib/img/mongodb.jpg" data-background-repeat="no-repeat" data-background-size="100%"
         data-background-opacity="0.7">
         <section>
           <h2>
-            conceptos basicos
+            Tipos de datos
           </h2>
         </section>
         <section>
-          <h2>
-            contenedor
-          </h2>
+          <img src="lib/img/mongoE4.jpg" alt="datos en mongo" width="100%">
         </section>
-        <section>
-          <h2>
-            imagen
-          </h2>
-        </section>
-        <section>
-          <h2>
-            network
-          </h2>
-        </section>
-        <section>
-          <h2>
-            volumenes
-          </h2>
-        </section>
-        <section>
-          <h2>
-            puertos
-          </h2>
-        </section>
-        <section>
-          <h2>
-            dockerhub
-          </h2>
-          <a href="https://hub.docker.com/">link dockerhub</a>
-        </section>
-      </section>
-      <section data-background="lib/img/comandos.png" data-background-repeat="no-repeat" data-background-size="100%"
-        data-background-opacity="0.7">
-        <section>
-          <h2>comandos basicos</h2>
-        </section>
-        <section>
-          <p>comandos</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker</code></pre>
-        </section>
-        <section>
-          <p>listar imagenes</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker images</code></pre>
-          <p>bajar imagenes</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker pull [imagen]</code></pre>
-          <p>eliminar imagenes</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker rmi [imagen]</code></pre>
-        </section>
-        <section>
-          <p>ejecutar contenedores</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker run --name [nombre contenedor] [imagen]</code></pre>
-          <p>contenedor iteractivo</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker run -i -t --name [nombre contenedor] [imagen]</code></pre>
-          <p>contenedor en segundo plano</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker run -i -t -d --name [nombre contenedor] [imagen]</code></pre>
-        </section>
-        <section>
-          <p>visualizar contenedores</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker ps</code></pre>
-          <p>visualizar todos los contenedores</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker ps -a</code></pre>
-        </section>
-        <section>
-          <p>detener contenedores</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker stop [contenedor]</code></pre>
-          <p>iniciar contenedores</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker start [contenedor]</code></pre>
-          <p>eliminar contenedores</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker rm [contenedor]</code></pre>
-          <p>acceder a un contenedor en ejecucion</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker attach [contenedor]</code></pre>
-        </section>
-      </section>
-      <section data-background="lib/img/redes.jpg" data-background-repeat="no-repeat" data-background-size="100%"
-        data-background-opacity="0.7">
-        <section>
-          <h3>redes en docker</h3>
-        </section>
-        <section>
-          es mejor con docker compose
-        </section>
-      </section>
-      <section data-background="lib/img/SWARM.png" data-background-repeat="no-repeat" data-background-size="80%"
-        data-background-opacity="0.7">
-        <section>
-          <h3>Volumenes</h3>
-        </section>
-        <section>
-          <p>creacion basica</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">docker volume create [nombre]</code></pre>
-        </section>
-        <section>
-          <p>compartir volumenes entre contenedores</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">--volumes-from [nombre de contenedor]</code></pre>
-          <p>usar un volumen</p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">-v [nombre del volumen]:[directorio contenedor]</code></pre>
 
+      </section>
+      <section data-background="lib/img/mongo2.png" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.7">
+        <section>
+          <h2>Relaciones</h2>
         </section>
         <section>
-          <p>
-            mapear volumenes
-          </p>
-          <pre><code class="hljs html" style="word-wrap: break-word;">-v [directorio local]:[directorio contenedor]</code></pre>
-        </section>
-      </section>
-      <section data-background="lib/img/docker3.png" data-background-repeat="no-repeat" data-background-size="100%"
-        data-background-opacity="0.7">
-        <p>mapear puertos</p>
-        <pre><code class="hljs html" style="word-wrap: break-word;">-p [puerto local]:[puerto contenedor]</code></pre>
-      </section>
-      <section data-background="lib/img/docker3.png" data-background-repeat="no-repeat" data-background-size="100%"
-        data-background-opacity="0.7">
-        <h3>Portrainer</h3>
-        <p>Volumen</p>
-        <pre><code class="hljs html" style="word-wrap: break-word;">docker volume create portainer_data</code></pre>
-        <p>Contenedor</p>
-        <pre><code class="hljs html" style="word-wrap: break-word;">docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer</code></pre>
-      </section>
-      <section data-background="lib/img/docker2.png" data-background-repeat="no-repeat" data-background-size="100%"
-        data-background-opacity="0.5">
-        <section>
-          <h2>Dockerfile</h2>
-          <pre><code class="hljs" data-trim data-line-numbers="">
-            FROM node:14
-            RUN mkdir -p /usr/src/app
-            WORKDIR /usr/src/app
-            COPY . .
-            ENV API_EXTERNA=https://pokeapi.co/api/v2/
-            ARG URL_BD
-            ENV BD_URL=${URL_BD}
-            RUN npm i -g @nestjs/cli
-            RUN npm install
-            CMD [ "npm", "run", "start" ]
-            EXPOSE 3000
+          <h3>1 a 1</h3>
+          <pre><code class="hljs" data-trim data-line-numbers="6-12">
+            {
+              "_id":ObjectId("514ed98d44aee1b035ee756f"),
+              "nombre":"Adrian",
+              "apellido":"Alonso",
+              "numerodecontacto":"412312",
+              "direccion": {
+                "tipo":"Calle",
+                "nombre":"Buenavista",
+                "numero":2,
+                "piso": Noveno B,
+                "codigopostal":28823
+              },
+              "email":"prueba@email.com",
+              "password":"example",
+              "privilegios":0
+              }
                         </code></pre>
         </section>
-       
-      </section>
-      <section data-background="lib/img/compose.png" data-background-repeat="no-repeat" data-background-size="100%"
-      data-background-opacity="0.5">
-      <section>
-        <h2>Docker Compose</h2>
-      </section>
-      <section>
-        <pre><code class="hljs" data-trim data-line-numbers="">
-          version: '3'
+        <section>
+          <h3>1 a muchos</h3>
+          <img src="lib/img/mongoE2.jpg" alt="">
+        </section>
+        <section>
+          <p>Embeber documentos</p>
+          <pre><code class="hljs" data-trim data-line-numbers="6-18">
+          {
+            "_id":ObjectId("52ffc33cd85242f436000001"),
+            "contact": "987654321",
+            "dob": "01-01-1991",
+            "name": "Tom Benzamin",
+            "address": [
+               {
+                  "building": "22 A, Indiana Apt",
+                  "pincode": 123456,
+                  "city": "Los Angeles",
+                  "state": "California"
+               },
+               {
+                  "building": "170 A, Acropolis Apt",
+                  "pincode": 456789,
+                  "city": "Chicago",
+                  "state": "Illinois"
+               }]
+         } 
+                        </code></pre>
+        </section>
+        <section>
+          <p>Referencia a documentos</p>
+          <pre><code class="hljs" data-trim data-line-numbers="6-9">
+            {
+              "_id":ObjectId("52ffc33cd85242f436000001"),
+              "contact": "987654321",
+              "dob": "01-01-1991",
+              "name": "Tom Benzamin",
+              "address_ids": [
+                 ObjectId("52ffc4a5d85242602e000000"),
+                 ObjectId("52ffc4a5d85242602e000001")
+              ]
+           } 
+                        </code></pre>
+        </section>
+        <section>
+          <h3>Muchos a muchos</h3>
+          <p>Referencia a documentos</p>
+          <pre><code class="hljs" data-trim data-line-numbers="6-9">
+            // publicacion
+            {
+              "_id": ObjectId("514d920b44ae16d201a3ff51"),
+              "nombre":"Capucchino",
+              "precio":20,
+              "marca":"Nescafé",
+              "comentarios": [
+                DBRef("Comentario",
+                ObjectId("514d91a644ae16d201a3ff50"))
+              ]
+              }
 
-          services: 
-              mongo:
-                  image: mongo
-                  container_name: mongo-service
-                  ports: 
-                      - 27017:27017
-                  expose: 
-                      - 27017
-              
-              back:
-                  container_name: "chat-service"
-                  restart: always
-                  build: .
-                  ports: 
-                      - 3000:3000
-                  depends_on: 
-                      - mongo
-                  links: 
-                      - mongo
-                      </code></pre>
-      </section>
+
+            {
+              "_id" : ObjectId("514d91a644ae16d201a3ff50"),
+              "usuario" : DBRef("Usuario", ObjectId("514ed98d44aee1b035ee756f")),
+              "texto" : "Me gusta"
+            }
+                        </code></pre>
+        </section>
         
       </section>
+     
+
+
     </div>
   </div>
 
