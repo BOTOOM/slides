@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>DOCKER</title>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link rel="stylesheet" href="css/theme/black.css" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/monokai.css" />
+  <!-- fontasome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = window.location.search.match(/print-pdf/gi)
+      ? "css/print/pdf.css"
+      : "css/print/paper.css";
+    document.getElementsByTagName("head")[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- portada -->
+      <section>
+        <section data-background="lib/img/portada_docker.png" data-background-repeat="no-repeat"
+          data-background-size="100%" data-background-opacity="0.5">
+          <h2>DOCKER</h2>
+        </section>
+        <section data-background="lib/img/dev.jpg" data-background-repeat="no-repeat" data-background-size="100%"
+          data-background-opacity="0.5">
+          <h4>Edwar Diaz Ruiz</h4>
+          <p>Estudiante de ultimos semestres de ingenieria de sistemas</p>
+          <p>Desarrolador WEB full stack</p>
+          <a href="https://github.com/BOTOOM"><i class="fab fa-github"></i> BOTOOM</a>
+          <br />
+          <a href="https://gitlab.com/SrBotom"><i class="fab fa-gitlab"></i> SrBotom</a>
+          <br />
+          <a href="https://www.instagram.com/sr.botom"><i class="fab fa-instagram"></i> @sr.botom</a>
+          <br />
+          <a href="https://www.facebook.com/SR.BOTOM"><i class="fab fa-facebook-square"></i> SR.BOTOM</a>
+          <br />
+          <a href="eddiazr@correo.udistrital.edu.co"><i class="far fa-envelope"></i>
+            eddiazr@correo.udistrital.edu.co</a>
+          <br />
+        </section>
+      </section>
+      <!-- fin portada -->
+      <section>
+        <section data-background="lib/img/quees.jpg" data-background-repeat="no-repeat" data-background-size="70%"
+          data-background-opacity="0.5">
+          <h2>Que Es??? ...</h2>
+        </section>
+        <section data-background="lib/img/vs.jpg" data-background-repeat="no-repeat" data-background-size="100%"
+          data-background-opacity="0.8"></section>
+        <section data-background="lib/img/archi1.png" data-background-repeat="no-repeat" data-background-size="100%"
+          data-background-opacity="0.8"></section>
+        <section data-background="lib/img/archi2.png" data-background-repeat="no-repeat" data-background-size="100%"
+          data-background-opacity="0.8"></section>
+        <section data-background="lib/img/docker1.png" data-background-repeat="no-repeat" data-background-size="100%"
+          data-background-opacity="0.5">
+          <h3>instalacion</h3>
+          <a href="https://docs.docker.com/install/">pagina de docker</a>
+        </section>
+        <section data-background="lib/img/portrainer.png" data-background-repeat="no-repeat" data-background-size="100%"
+          data-background-opacity="0.7">
+          <h4>portrainer</h4>
+        </section>
+      </section>
+      <section data-background="lib/img/docker2.png" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.7">
+        <section>
+          <h2>
+            conceptos basicos
+          </h2>
+        </section>
+        <section>
+          <h2>
+            contenedor
+          </h2>
+        </section>
+        <section>
+          <h2>
+            imagen
+          </h2>
+        </section>
+        <section>
+          <h2>
+            network
+          </h2>
+        </section>
+        <section>
+          <h2>
+            volumenes
+          </h2>
+        </section>
+        <section>
+          <h2>
+            puertos
+          </h2>
+        </section>
+        <section>
+          <h2>
+            dockerhub
+          </h2>
+          <a href="https://hub.docker.com/">link dockerhub</a>
+        </section>
+      </section>
+      <section data-background="lib/img/comandos.png" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.7">
+        <section>
+          <h2>comandos basicos</h2>
+        </section>
+        <section>
+          <p>comandos</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker</code></pre>
+        </section>
+        <section>
+          <p>listar imagenes</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker images</code></pre>
+          <p>bajar imagenes</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker pull [imagen]</code></pre>
+          <p>eliminar imagenes</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker rmi [imagen]</code></pre>
+        </section>
+        <section>
+          <p>ejecutar contenedores</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker run --name [nombre contenedor] [imagen]</code></pre>
+          <p>contenedor iteractivo</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker run -i -t --name [nombre contenedor] [imagen]</code></pre>
+          <p>contenedor en segundo plano</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker run -i -t -d --name [nombre contenedor] [imagen]</code></pre>
+        </section>
+        <section>
+          <p>visualizar contenedores</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker ps</code></pre>
+          <p>visualizar todos los contenedores</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker ps -a</code></pre>
+        </section>
+        <section>
+          <p>detener contenedores</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker stop [contenedor]</code></pre>
+          <p>iniciar contenedores</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker start [contenedor]</code></pre>
+          <p>eliminar contenedores</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker rm [contenedor]</code></pre>
+          <p>acceder a un contenedor en ejecucion</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker attach [contenedor]</code></pre>
+        </section>
+      </section>
+      <section data-background="lib/img/redes.jpg" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.7">
+        <section>
+          <h3>redes en docker</h3>
+        </section>
+        <section>
+          es mejor con docker compose
+        </section>
+      </section>
+      <section data-background="lib/img/SWARM.png" data-background-repeat="no-repeat" data-background-size="80%"
+        data-background-opacity="0.7">
+        <section>
+          <h3>Volumenes</h3>
+        </section>
+        <section>
+          <p>creacion basica</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">docker volume create [nombre]</code></pre>
+        </section>
+        <section>
+          <p>compartir volumenes entre contenedores</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">--volumes-from [nombre de contenedor]</code></pre>
+          <p>usar un volumen</p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">-v [nombre del volumen]:[directorio contenedor]</code></pre>
+
+        </section>
+        <section>
+          <p>
+            mapear volumenes
+          </p>
+          <pre><code class="hljs html" style="word-wrap: break-word;">-v [directorio local]:[directorio contenedor]</code></pre>
+        </section>
+      </section>
+      <section data-background="lib/img/docker3.png" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.7">
+        <p>mapear puertos</p>
+        <pre><code class="hljs html" style="word-wrap: break-word;">-p [puerto local]:[puerto contenedor]</code></pre>
+      </section>
+      <section data-background="lib/img/docker3.png" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.7">
+        <h3>Portrainer</h3>
+        <p>Volumen</p>
+        <pre><code class="hljs html" style="word-wrap: break-word;">docker volume create portainer_data</code></pre>
+        <p>Contenedor</p>
+        <pre><code class="hljs html" style="word-wrap: break-word;">docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer</code></pre>
+      </section>
+      <section data-background="lib/img/docker2.png" data-background-repeat="no-repeat" data-background-size="100%"
+        data-background-opacity="0.5">
+        <section>
+          <h2>Dockerfile</h2>
+          <pre><code class="hljs" data-trim data-line-numbers="">
+            FROM node:14
+            RUN mkdir -p /usr/src/app
+            WORKDIR /usr/src/app
+            COPY . .
+            ENV API_EXTERNA=https://pokeapi.co/api/v2/
+            ARG URL_BD
+            ENV BD_URL=${URL_BD}
+            RUN npm i -g @nestjs/cli
+            RUN npm install
+            CMD [ "npm", "run", "start" ]
+            EXPOSE 3000
+                        </code></pre>
+        </section>
+       
+      </section>
+      <section data-background="lib/img/compose.png" data-background-repeat="no-repeat" data-background-size="100%"
+      data-background-opacity="0.5">
+      <section>
+        <h2>Docker Compose</h2>
+      </section>
+      <section>
+        <pre><code class="hljs" data-trim data-line-numbers="">
+          version: '3'
+
+          services: 
+              mongo:
+                  image: mongo
+                  container_name: mongo-service
+                  ports: 
+                      - 27017:27017
+                  expose: 
+                      - 27017
+              
+              back:
+                  container_name: "chat-service"
+                  restart: always
+                  build: .
+                  ports: 
+                      - 3000:3000
+                  depends_on: 
+                      - mongo
+                  links: 
+                      - mongo
+                      </code></pre>
+      </section>
+        
+      </section>
+    </div>
+  </div>
+
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [
+        { src: "plugin/markdown/marked.js" },
+        { src: "plugin/markdown/markdown.js" },
+        { src: "plugin/notes/notes.js", async: true },
+        { src: "plugin/highlight/highlight.js", async: true }
+      ]
+    });
+  </script>
+</body>
+
+</html>
